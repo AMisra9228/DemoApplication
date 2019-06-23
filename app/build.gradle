@@ -1,0 +1,66 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "app.demo.demoapplication"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+
+    //Circular menu library
+    implementation 'com.github.Hitomis:CircleMenu:v1.1.0'
+    //For Http request - response and Caching http data
+    implementation 'com.android.volley:volley:1.1.0'
+    //Material design
+    implementation 'com.android.support:design:28.0.0'
+    //Facebook sdk
+//    implementation 'com.facebook.android:facebook-login:[4,5)'
+
+    implementation 'com.facebook.android:facebook-android-sdk:[5,6)'
+//    // Facebook SDK Core only (Analytics)
+//    implementation 'com.facebook.android:facebook-core:5.+'
+//    // Facebook Login only
+//    implementation 'com.facebook.android:facebook-login:5.+'
+//    // Facebook Share only
+//    implementation 'com.facebook.android:facebook-share:5.+'
+//    // Facebook Places only
+//    implementation 'com.facebook.android:facebook-places:5.+'
+//    // Facbeook Messenger only
+//    implementation 'com.facebook.android:facebook-messenger:4.+'
+//    // Facebook App Links only
+//    implementation 'com.facebook.android:facebook-applinks:5.+'
+//    // Facebook Android SDK (everything)
+//    implementation 'com.facebook.android:facebook-android-sdk:5.+'
+//    // Audience Network SDK.
+//    implementation 'com.facebook.android:audience-network-sdk:5.+'
+//    // Account Kit
+//    implementation 'com.facebook.android:account-kit-sdk:5.+'
+
+    implementation 'com.android.support:support-v4:28.0.0'
+    //Google Authentication
+    implementation 'com.google.android.gms:play-services-auth:16.0.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}
+
+apply plugin: 'com.android.application'
+
+
+
