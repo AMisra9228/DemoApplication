@@ -3,7 +3,7 @@
 
     <string name="user_home">User Home</string>
 
-    <string name="facebook_app_id">336732670340742</string>
-    <string name="fb_login_protocol_scheme">fb336732670340742</string>
+    <string name="facebook_app_id">"YOUR KEY"</string>
+    <string name="fb_login_protocol_scheme">"YOUR KEY"</string>
 
 </resources>
